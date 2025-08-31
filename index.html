@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanskriti Gupta | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Geometric Background -->
+    <div class="geometric-background">
+        <div class="geometric-shape"></div>
+        <div class="geometric-shape"></div>
+        <div class="geometric-shape"></div>
+        <div class="geometric-shape"></div>
+    </div>
+
+    <!-- Certificate Modal -->
+    <div id="certificateModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <div class="logo"><span>💼SANSKRITI GUPTA✏️</span></div>
+            <ul class="nav-links">
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+                <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <li><a href="#certificates"><i class="fas fa-award"></i> Certificates</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Hi, I'm <span>Sanskriti Gupta</span></h1>
+                <p class="typing-text">"🌟BBA student skilled in design, management.✏️"</p>
+                <p>Currently pursuing my Bachelor's in Business Administration and gaining practical experience through internships.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#certificates" class="btn btn-secondary">View Certificates</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-img-container">
+                    <div class="profile-img"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-title">
+            <h2>About Me</h2>
+        </div>
+        <div class="about-content">
+            <div class="about-image">
+                <div class="about-img-container">
+                    <div class="about-img"></div>
+                </div>
+            </div>
+            <div class="about-text">
+                <h3>BBA Student & Graphic Designer</h3>
+                <p>I am a dedicated BBA student at PSIT College of Higher Education with a passion for graphic design, data analysis, and management. I have successfully completed internships at The ProEducator and Lernx, where I honed my skills in graphic design and leadership.</p>
+                <p>My strengths include critical thinking, teamwork, and advanced Excel skills. I'm always eager to learn new technologies and methodologies to enhance my professional capabilities.</p>
+                
+                <div class="about-details">
+                    <div class="detail-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>guptasanskriti2205@gmail.com</div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-phone"></i>
+                        <div>+91 7839310963</div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>Kanpur, India</div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>BBA Student</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="section-title">
+            <h2>My Skills</h2>
+        </div>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3><i class="fas fa-paint-brush"></i> Design & Creative</h3>
+                <div class="skill-list">
+                    <div class="skill"><i class="fas fa-palette"></i> Graphic Design</div>
+                    <div class="skill"><i class="fas fa-pencil-alt"></i> Illustration</div>
+                    <div class="skill"><i class="fas fa-image"></i> Photo Editing</div>
+                    <div class="skill"><i class="fas fa-film"></i> Video Editing</div>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3><i class="fas fa-chart-line"></i> Data Analysis</h3>
+                <div class="skill-list">
+                    <div class="skill"><i class="fas fa-file-excel"></i> Advanced Excel</div>
+                    <div class="skill"><i class="fas fa-database"></i> Data Modeling</div>
+                    <div class="skill"><i class="fas fa-chart-bar"></i> Data Visualization</div>
+                    <div class="skill"><i class="fas fa-calculator"></i> Statistical Analysis</div>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3><i class="fas fa-laptop-code"></i> Technical</h3>
+                <div class="skill-list">
+                    <div class="skill"><i class="fas fa-file-excel"></i> Microsoft Excel</div>
+                    <div class="skill"><i class="fas fa-file-powerpoint"></i> PowerPoint</div>
+                    <div class="skill"><i class="fas fa-file-word"></i> Word</div>
+                    <div class="skill"><i class="fas fa-desktop"></i> Presentation Skills</div>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3><i class="fas fa-users"></i> Soft Skills</h3>
+                <div class="skill-list">
+                    <div class="skill"><i class="fas fa-bullhorn"></i> Leadership</div>
+                    <div class="skill"><i class="fas fa-users"></i> Teamwork</div>
+                    <div class="skill"><i class="fas fa-brain"></i> Critical Thinking</div>
+                    <div class="skill"><i class="fas fa-tasks"></i> Management</div>
+                    <div class="skill"><i class="fas fa-comments"></i> Communication</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-item">
+                <span class="stat-number" data-count="15">0</span>
+                <span class="stat-title">Projects Completed</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="2">0</span>
+                <span class="stat-title">Internships</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="9">0</span>
+                <span class="stat-title">Certificates</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="4">0</span>
+                <span class="stat-title">Years Experience</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="section-title">
+            <h2>Education & Experience</h2>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-school"></i>
+                </div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2019 - 2021</span>
+                    <h3 class="timeline-title">Sheiling House School, Kanpur</h3>
+                    <p class="timeline-desc">Completed my schooling with a focus on business studies and active participation in sports and extracurricular activities.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-university"></i>
+                </div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2024 - Present</span>
+                    <h3 class="timeline-title">PSIT College of Higher Education</h3>
+                    <p class="timeline-desc">Currently pursuing a Bachelor's in Business Administration (BBA) with a focus on data modeling, advanced Excel, and business management.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2025</span>
+                    <h3 class="timeline-title">Graphic Design Intern - The ProEducator</h3>
+                    <p class="timeline-desc">Completed an internship focused on graphic design, creating visual content, and developing marketing materials.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2025</span>
+                    <h3 class="timeline-title">Campus Influencer - Lernx</h3>
+                    <p class="timeline-desc">Participated in the Campus Influencer Program, developing leadership and marketing skills while promoting educational initiatives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+        <div class="section-title">
+            <h2>My Certificates</h2>
+        </div>
+        <div class="certificates-container">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="certificate-item">
+                            <img src="https://ik.imagekit.io/7cknsz6it/Sanskriti%20portfolio/1.jpg?updatedAt=1756627640387" alt="Internship Offer Letter" class="certificate-img">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">Internship Offer Letter</h3>
+                                <p class="certificate-desc">Graphic Design Intern at The ProEducator - June 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="certificate-item">
+                            <img src="https://ik.imagekit.io/7cknsz6it/Sanskriti%20portfolio/2.jpg?updatedAt=1756627639521" alt="Certificate of Appreciation" class="certificate-img">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">Certificate of Appreciation</h3>
+                                <p class="certificate-desc">Lernx - June 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="certificate-item">
+                            <img src="https://ik.imagekit.io/7cknsz6it/Sanskriti%20portfolio/3.jpg?updatedAt=1756627640547" alt="Data Modeling Certificate" class="certificate-img">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">Data Modeling Certificate</h3>
+                                <p class="certificate-desc">PSIT College - 2024-25</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="certificate-item">
+                            <img src="https://ik.imagekit.io/7cknsz6it/Sanskriti%20portfolio/4.jpg?updatedAt=1756627639700" alt="Campus Influencer Program" class="certificate-img">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">Campus Influencer Program</h3>
+                                <p class="certificate-desc">Lernx - June 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="certificate-item">
+                            <img src="https://ik.imagekit.io/7cknsz6it/Sanskriti%20portfolio/5.jpg?updatedAt=1756627640451" alt="Research Paper Presentation" class="certificate-img">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">Research Paper Presentation</h3>
+                                <p class="certificate-desc">ICONSDG 2025 - PSIT College</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="certificate-item">
+                            <img src="https://ik.imagekit.io/7cknsz6it/Sanskriti%20portfolio/6.jpg?updatedAt=1756627640348" alt="Sports Achievement" class="certificate-img">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">Sports Achievement</h3>
+                                <p class="certificate-desc">CISCE National Sports - 2019</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="certificate-item">
+                            <img src="https://ik.imagekit.io/7cknsz6it/Sanskriti%20portfolio/7.jpg?updatedAt=1756627640295" alt="Sports Certificate" class="certificate-img">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">Sports Certificate</h3>
+                                <p class="certificate-desc">CISCE Games & Sports - 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="certificate-item">
+                            <img src="https://ik.imagekit.io/7cknsz6it/Sanskriti%20portfolio/8.jpg?updatedAt=1756627640445" alt="Sports Participation" class="certificate-img">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">Sports Participation</h3>
+                                <p class="certificate-desc">CISCE National Sports - 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="certificate-item">
+                            <img src="https://ik.imagekit.io/7cknsz6it/Sanskriti%20portfolio/9.jpg?updatedAt=1756627640316" alt="Sports Achievement" class="certificate-img">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">Sports Achievement</h3>
+                                <p class="certificate-desc">CISCE National Sports - 2019</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="certificate-item">
+                            <img src="https://ik.imagekit.io/7cknsz6it/Sanskriti%20portfolio/10.jpg?updatedAt=1756627640147" alt="Sports Participation" class="certificate-img">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title>Sports Participation</h3>
+                                <p class="certificate-desc">CISCE Games & Sports - 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="certificate-item">
+                            <img src="https://ik.imagekit.io/7cknsz6it/Sanskriti%20portfolio/11.png?updatedAt=1756652344300" alt="MS Office Specialist" class="certificate-img">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title>MS Office Specialist</h3>
+                                <p class="certificate-desc">MS Office Specialist - 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-title">
+            <h2>Get In Touch</h2>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Email</h4>
+                        <p>guptasanskriti2205@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Phone</h4>
+                        <p>+91 7839310963</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Location</h4>
+                        <p>Kanpur, India</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="https://formspree.io/f/mjvnnewq" method="POST" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="subject" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                <div class="form-success" id="formSuccess">
+                    <i class="fas fa-check-circle" style="font-size: 48px; margin-bottom: 15px;"></i>
+                    <h3>Thank You!</h3>
+                    <p>Your message has been sent successfully. I will get back to you soon.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>Sanskriti Gupta</h3>
+                <p>A passionate BBA student with expertise in Graphic Design, Management, and Data Analysis.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-envelope"></i> guptasanskriti2205@gmail.com</li>
+                    <li><i class="fas fa-phone"></i> +91 7839310963</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Kanpur, India</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Sanskriti Gupta. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
+    <script src="index.js"></script>
+</body>
+</html>
