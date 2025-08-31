@@ -1,4 +1,4 @@
-  // Preloader
+// Preloader
         window.addEventListener('load', () => {
             const preloader = document.querySelector('.preloader');
             setTimeout(() => {
@@ -73,18 +73,25 @@
         function initMobileMenu() {
             const hamburger = document.querySelector('.hamburger');
             const navLinks = document.querySelector('.nav-links');
-            
+
             hamburger.addEventListener('click', () => {
                 navLinks.classList.toggle('active');
-                hamburger.innerHTML = navLinks.classList.contains('active') ? 
+                hamburger.innerHTML = navLinks.classList.contains('active') ?
                     '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+                // Prevent body scroll when menu is open
+                if (navLinks.classList.contains('active')) {
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    document.body.style.overflow = '';
+                }
             });
-            
-            // Close menu when clicking on a link
+
+            // Close menu when clicking on a link (mobile)
             document.querySelectorAll('.nav-links a').forEach(link => {
                 link.addEventListener('click', () => {
                     navLinks.classList.remove('active');
                     hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+                    document.body.style.overflow = '';
                 });
             });
         }
@@ -261,12 +268,15 @@
             initScrollAnimations();
             initScrollToTop();
             initDarkMode();
-            
+
             // Make sure contact form is visible on mobile
             if (window.innerWidth <= 992) {
                 const contactForm = document.querySelector('.contact-form');
                 if (contactForm) {
                     contactForm.classList.add('visible');
+                    contactForm.style.display = 'block';
+                    contactForm.style.opacity = 1;
+                    contactForm.style.transform = 'translateX(0)';
                 }
             }
         });
