@@ -1935,3 +1935,42 @@ html, body {
     max-width: 100vw !important;
     overflow-x: hidden !important;
 }
+
+/* --- Dark mode: Mobile nav menu visible --- */
+@media (max-width: 992px) {
+  .dark-mode .nav-links {
+    background: #2D0320 !important;
+  }
+  .dark-mode .nav-links a {
+    color: #fff !important;
+  }
+  .dark-mode .nav-links a i {
+    color: #fff !important;
+  }
+}
+
+/* --- Ensure hamburger icon is visible in dark mode --- */
+@media (max-width: 992px) {
+  .dark-mode .hamburger i {
+    color: #fff !important;
+  }
+  .hamburger i {
+    color: #2D0320;
+    transition: color 0.3s;
+  }
+}
+
+/* --- Ensure nav links are always fully visible in mobile nav --- */
+@media (max-width: 992px) {
+  .nav-links a,
+  .nav-links a i {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    filter: none !important;
+  }
+}
+
+.nav-links a[disabled], .nav-links a.disabled {
+    opacity: 0.3;
+    pointer-events: none;
+}
